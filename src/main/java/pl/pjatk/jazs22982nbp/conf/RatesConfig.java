@@ -28,7 +28,7 @@ public class RatesConfig {
                 .select()
                 .paths(PathSelectors.any())
                 .apis(RequestHandlerSelectors.basePackage("pl.pjatk.jazs22982nbp"))
-                .build();
+                .build().apiInfo(createApiInfo());
     }
     private ApiInfo createApiInfo(){
         return new ApiInfo(
