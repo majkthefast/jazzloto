@@ -2,7 +2,6 @@ package pl.pjatk.jazs22982nbp.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.pjatk.jazs22982nbp.data.Rate;
 import pl.pjatk.jazs22982nbp.data.RateQueryResult;
 import pl.pjatk.jazs22982nbp.service.NBPService;
 
@@ -24,7 +23,7 @@ public class NBPController {
     }*/
 
     @GetMapping("/{effectiveDate}")
-    public ResponseEntity<RateQueryResult> getGoldRateByDate(@PathVariable String effectiveDate){
-        return ResponseEntity.ok(this.ratesService.getGoldRateByDate(effectiveDate));
+    public ResponseEntity<RateQueryResult> getGoldRateByDate(@PathVariable String date){
+        return ResponseEntity.ok(this.ratesService.getGoldRateByDate(date));
     }
 }

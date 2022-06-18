@@ -3,13 +3,12 @@ package pl.pjatk.jazs22982nbp.data;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "db_nbp")
+@Table(name = "Zloto")
 @ApiModel(value = "NBP", description = "NBP from DB")
 public class AvgRate {
     @Id

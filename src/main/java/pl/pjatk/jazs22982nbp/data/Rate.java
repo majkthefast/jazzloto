@@ -7,15 +7,15 @@ import javax.persistence.Id;
 public class Rate {
     @Id
     private String no;
-    private String effectiveDate;
-    private double mid;
+    private String date;
+    private int mid;
 
     public Rate() {
     }
 
-    public Rate(String no, String effectiveDate, double mid) {
+    public Rate(String no, String date, int mid) {
         this.no = no;
-        this.effectiveDate = effectiveDate;
+        this.date = date;
         this.mid = mid;
     }
 
@@ -28,18 +28,18 @@ public class Rate {
     }
 
     public String getEffectiveDate() {
-        return effectiveDate;
+        return date;
     }
 
     public void setEffectiveDate(String effectiveDate) {
-        this.effectiveDate = effectiveDate;
+        this.date = effectiveDate;
     }
 
     public double getMid() {
         return mid;
     }
 
-    public void setMid(double mid) {
+    public void setMid(int mid) {
         this.mid = mid;
     }
 }
